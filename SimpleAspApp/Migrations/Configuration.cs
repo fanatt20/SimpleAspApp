@@ -1,3 +1,5 @@
+using SimpleAspApp.Models;
+
 namespace SimpleAspApp.Migrations
 {
     using System;
@@ -6,14 +8,14 @@ namespace SimpleAspApp.Migrations
     using System.Linq;
     using SimpleAspApp.Models;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<SimpleAspApp.Models.SimpleAspAppContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<SimpleAspAppContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(SimpleAspApp.Models.SimpleAspAppContext context)
+        protected override void Seed(SimpleAspAppContext context)
         {
             context.Authors.AddOrUpdate(x => x.Id,
        new Author() { Id = 1, Name = "Jane Austen" },

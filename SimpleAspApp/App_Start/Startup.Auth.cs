@@ -8,8 +8,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using SimpleAspApp.Providers;
 using SimpleAspApp.Models;
+using SimpleAspApp.Providers;
 
 namespace SimpleAspApp
 {

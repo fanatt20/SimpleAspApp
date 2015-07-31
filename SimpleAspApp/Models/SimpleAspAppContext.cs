@@ -17,12 +17,11 @@ namespace SimpleAspApp.Models
     
         public SimpleAspAppContext() : base("name=SimpleAspAppContext")
         {
-            this.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
-        }
+           }
 
-        public System.Data.Entity.DbSet<SimpleAspApp.Models.Author> Authors { get; set; }
+        public System.Data.Entity.DbSet<Author> Authors { get; set; }
 
-        public System.Data.Entity.DbSet<SimpleAspApp.Models.Book> Books { get; set; }
+        public System.Data.Entity.DbSet<Book> Books { get; set; }
     
     }
 }
