@@ -17,6 +17,7 @@ namespace SimpleAspApp.Models
     
         public SimpleAspAppContext() : base("name=SimpleAspAppContext")
         {
+            this.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
 
         public System.Data.Entity.DbSet<SimpleAspApp.Models.Author> Authors { get; set; }
